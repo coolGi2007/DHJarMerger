@@ -115,7 +115,7 @@ public class MergeJarsTask extends DefaultTask {
             perms.add(PosixFilePermission.GROUP_EXECUTE);
             perms.add(PosixFilePermission.GROUP_WRITE);
             perms.add(PosixFilePermission.GROUP_READ);
-            Files.setPosixFilePermissions(Path.of(new File(jarMerger, jar + ".jar").getAbsolutePath()), perms); // Apply the perms onto the jar
+            Files.setPosixFilePermissions(new File(jarMerger, jar + ".jar").toPath().toAbsolutePath(), perms); // Apply the perms onto the jar
         } catch (UnsupportedOperationException | IOException ignored) { }
 
 
