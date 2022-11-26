@@ -1,4 +1,13 @@
-# Ran's Distant horizons jar merger
+# Archived
+Please use [Forgix](https://github.com/PacifistMC/Forgix) instead
+
+
+#
+#
+#
+#
+#
+### Old documentation
 This project was made to merge the forge and fabric jars for the distant horizons mod
 
 ### To build:
